@@ -5,7 +5,7 @@
    "height": 400,
    "projection": {"type": "equalEarth"},
    "data": {
-      "url": "https://raw.githubusercontent.com/Tan-Weijin/FIT3179/main/Data/ne_110m_admin_0_countries.topojson",
+      "url": "https://raw.githubusercontent.com/Tan-Weijin/FIT3179/main/Week_9/Data/ne_110m_admin_0_countries.topojson",
       "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
    },
    "transform": [
@@ -13,7 +13,7 @@
       "lookup": "properties.ADM0_A3",
       "from": {
          "data": {
-         "url": "https://raw.githubusercontent.com/Tan-Weijin/FIT3179/main/Data/Military%20Expenditure.csv"
+         "url": "https://raw.githubusercontent.com/Tan-Weijin/FIT3179/main/Week_9/Data/Military%20Expenditure.csv"
       },
          "key": "Code",
          "fields": ["new"]
