@@ -16,14 +16,14 @@
          "data": {
          "url":"https://raw.githubusercontent.com/Tan-Weijin/FIT3179/main/Week_9/Data/us_tornado_dataset_1950_2021.csv"
          },
-         "mark": {"type": "circle", "tooltip": {"content": "data"}},
+         "mark": {"type": "circle", "tooltip": {"content": "encoding"}},
          "encoding": {
-            "longitude": {"field": "slon", "type":"quantitative"},
-            "latitude": {"field": "slat", "type":"quantitative"},
+            "longitude": {"field": "slon", "type":"quantitative", "title": "longitude"},
+            "latitude": {"field": "slat", "type":"quantitative", "title": "latitude"},
             "size": {
                "field": "mag",
                "type": "quantitative",
-               "title": "Magnitude (Richter scale)",
+               "title": "Magnitude",
                "scale": {"domain": [-1, 4]}
             },
             "color": {
