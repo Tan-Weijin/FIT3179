@@ -3,7 +3,7 @@
    "width": 800,
    "height": 450,
    "title": "US Tornado with magnitude 0 or larger (2021)",
-   "projection": {"type": "equalEarth"},
+   "projection": {"type": "mercator"},
    "layer": [
       {
          "data": {
@@ -24,7 +24,7 @@
                "field": "mag",
                "type": "quantitative",
                "title": "Magnitude (Richter scale)",
-               "scale": {"domain": [0, 4]}
+               "scale": {"domain": [-1, 4]}
             },
             "color": {
                "field": "wid",
