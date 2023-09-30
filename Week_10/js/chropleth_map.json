@@ -1,0 +1,42 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Car Crashes in Australia by State (1989 - 2021)",
+    "width": 800,
+    "height": 400,
+    "projection": {"type": "mercator"},
+    "data": {
+       "url": "https://raw.githubusercontent.com/Tan-Weijin/FIT3179/main/Assignment/Data/ne_10m_admin_1_states_provinces.json",
+       "format": {"type": "topojson", "feature": "ne_10m_admin_1_states_provinces"}
+    },
+    "transform": [
+    {
+       "lookup": "properties.name_en",
+       "from": {
+          "data": {
+          "url": "https://raw.githubusercontent.com/Tan-Weijin/FIT3179/main/Assignment/Data/Crash_Data_map.csv"
+       },
+          "key": "State",
+          "fields": ["Total_Crash_Count", "Average_population"]
+       }
+    },
+    {"calculate": "datum.Total_Crash_Count/datum.Average_population  * 10000", "as": "Crashes per 10,000 population"}
+    ],
+    "mark": {"type": "geoshape"},
+    "encoding": {
+       "color": {
+          "field": "Crashes per 10,000 population",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [10, 20, 30, 40],
+            "range": ["#c1e7ff","#94bed9","#6996b3","#3d708f","#004c6d"]
+            }
+          },
+       "tooltip": [
+          {"field": "properties.name_en", "type": "nominal", "title": "State"},
+          {"field": "Total_Crash_Count", "type": "nominal", "title": "Total Crash Count"},
+          {"field": "Average_population", "type": "nominal", "title": "Average Population"},
+          {"field": "Crashes per 10,000 population", "type": "quantitative", "title": "Crashes per 10,000 population", "format": ".2f"}
+          ]
+       }
+}
