@@ -11,8 +11,12 @@
     <body>
         <div id="choropleth_map"></div>
         <script type="text/javascript">
-            var spec2 = "Js/test.json";
-            vegaEmbed('#choropleth_map', spec2).then(function(result) {
+            var vis_1 = "js/chropleth_map.json";
+            vegaEmbed('#choropleth_map', vis_1).then(function(result) {
+                // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+            }).catch(console.error);
+            var vis_2 = "js/linejson";
+            vegaEmbed('#line_graph', vis_2).then(function(result) {
                 // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
             }).catch(console.error);
         </script>
