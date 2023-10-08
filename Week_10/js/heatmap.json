@@ -1,0 +1,47 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "https://raw.githubusercontent.com/Tan-Weijin/FIT3179/main/Assignment/Data/Crash_Data.csv"
+    },
+    "title": "IDK bro",
+    "config": {
+        "view": {
+            "step": 20
+        },
+        "axis": {
+            "domain": false
+        }
+    },
+    "mark": "rect",
+    "encoding": {
+        "y": {
+            "field": "Dayweek",
+            "type": "nominal",
+            "title": "Day",
+            "axis": {
+                "labelAngle": 0
+            },
+            "sort": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+        },
+        "x": {
+            "field": "Month",
+            "timeUnit": "month",
+            "type": "ordinal",
+            "title": "Month"
+        },
+        "color": {
+            "field": "Crash ID",
+            "aggregate": "count",
+            "type": "quantitative",
+            "legend": {
+                "title": null
+            }
+        }, 
+        "tooltip": [
+            {"field": "Dayweek", "type": "nominal", "title": "Day"},
+            {"field": "Month", "timeUnit": "month", "type": "nominal", "title": "Month", "format": "%B"},
+            {"field": "Crash ID","aggregate": "count" ,"type": "quantitative", "title": "Number of Crashes"}
+        ]
+    }
+  }
+  

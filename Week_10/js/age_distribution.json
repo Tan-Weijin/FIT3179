@@ -19,25 +19,33 @@
         },
         "x": {
           "aggregate": "count", "field": "Crash ID",
-          "title": "population",
-          "axis": {"format": "s"}
+          "title": "Crash Count",
+          "axis": {"format": "s"},
+          "sort": "descending"
         },
         "color": {
           "field": "Gender",
           "scale": {"range": ["#675193", "#ca8861"]},
           "legend": null
-        }
+        }, 
+        "tooltip": [
+          {"field": "Age Group", "type": "nominal", "title": "Age Group"},
+          {"field": "Gender", "type": "nominal", "title": "Gender"},
+          {"field": "Crash ID","aggregate": "count" ,"type": "quantitative", "title": "Number of Crashes"}
+        ]
       }
     }, {
-      "width": 20,
+      "width": 70,
       "view": {"stroke": null},
       "mark": {
         "type": "text",
-        "align": "center"
+        "align": "center",
+        "fontSize": 12,
+        "font": "Helvetica"
       },
       "encoding": {
-        "y": {"field": "Age Group", "type": "ordinal", "axis": null, "sort": "descending"},
-        "text": {"field": "Age Group"}
+        "y": {"field": "Age Group", "type": "nominal", "axis": null, "sort": "descending"},
+        "text": {"field": "Age Group","type": "nominal"}
       }
     }, {
       "transform": [{
@@ -52,13 +60,18 @@
         },
         "x": {
           "aggregate": "count", "field": "Crash ID",
-          "title": "population",
+          "title": "Crash Count",
           "axis": {"format": "s"}
         },
         "color": {
           "field": "Gender",
           "legend": null
-        }
+        },
+        "tooltip": [
+          {"field": "Age Group", "type": "nominal", "title": "Age Group"},
+          {"field": "Gender", "type": "nominal", "title": "Gender"},
+          {"field": "Crash ID","aggregate": "count" ,"type": "quantitative", "title": "Number of Crashes"}
+        ]
       }
     }],
     "config": {
