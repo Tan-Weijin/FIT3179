@@ -1,0 +1,69 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A population pyramid for the US in 2000.",
+    "data": { "url": "https://raw.githubusercontent.com/Tan-Weijin/FIT3179/main/Assignment/Data/Crash_Data.csv"},
+    "transform": [
+      {"calculate": "datum.Gender == 2 ? 'Female' : 'Male'", "as": "gender"}
+    ],
+    "spacing": 0,
+    "hconcat": [{
+      "transform": [{
+        "filter": {"field": "Gender", "equal": "Female"}
+      }],
+      "title": "Female",
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "Age Group", "title": null,
+          "axis": null, "sort": "descending"
+        },
+        "x": {
+          "aggregate": "count", "field": "Crash ID",
+          "title": "population",
+          "axis": {"format": "s"}
+        },
+        "color": {
+          "field": "Gender",
+          "scale": {"range": ["#675193", "#ca8861"]},
+          "legend": null
+        }
+      }
+    }, {
+      "width": 20,
+      "view": {"stroke": null},
+      "mark": {
+        "type": "text",
+        "align": "center"
+      },
+      "encoding": {
+        "y": {"field": "Age Group", "type": "ordinal", "axis": null, "sort": "descending"},
+        "text": {"field": "Age Group"}
+      }
+    }, {
+      "transform": [{
+        "filter": {"field": "Gender", "equal": "Male"}
+      }],
+      "title": "Male",
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "Age Group", "title": null,
+          "axis": null, "sort": "descending"
+        },
+        "x": {
+          "aggregate": "count", "field": "Crash ID",
+          "title": "population",
+          "axis": {"format": "s"}
+        },
+        "color": {
+          "field": "Gender",
+          "legend": null
+        }
+      }
+    }],
+    "config": {
+      "view": {"stroke": null},
+      "axis": {"grid": false}
+    }
+  }
+  
