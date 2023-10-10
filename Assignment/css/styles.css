@@ -1,4 +1,4 @@
-div#line_graph {
+#line_graph {
     position: relative; /* needed for footer positioning*/
     height: auto !important; /* real browsers */
     min-height: 100%; /* real browsers */
