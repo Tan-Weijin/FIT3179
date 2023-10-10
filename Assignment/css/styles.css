@@ -5,7 +5,7 @@
   }
 
 #side {
-  padding:10px;
+  display: block;
 }
 
 .child{
