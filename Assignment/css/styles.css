@@ -6,6 +6,7 @@
 
 #side {
   display: block;
+  float: right;
 }
 
 .child{
