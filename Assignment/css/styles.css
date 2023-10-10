@@ -8,6 +8,10 @@
   display: block;
 }
 
+#title{
+  font-family: "AS1744";
+}
+
 .column_left {
   flex: 50%;
   padding: 10px;
