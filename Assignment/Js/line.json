@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "layer":[
+    {
+      "title": "Car Crashes in Australia by State (1989 - 2021)",
+      "width": 700,
+      "height": 400,
+      "data": {"url": "https://raw.githubusercontent.com/Tan-Weijin/FIT3179/main/Assignment/Data/crash_data_line.csv"},
+      "params": [
+        {
+          "name": "state_highlight",
+          "select": {"type": "point", "fields": ["state"]},
+          "bind": "legend"   
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "point": true
+      },
+      "encoding": {
+        "x": {"timeUnit": "year", "field": "year", "title":"Year"},
+        "y": {"field": "crash_count", "type": "quantitative", "title": "Number of Crashes"},
+        "color": {"field": "state", "type": "nominal", "title": "State"},
+        "tooltip": [{"field": "state","title":"State"},
+                    {"timeUnit": "year","field": "year", "title":"Year"},
+                    {"field": "crash_count","title":"Number of Crashes"}
+                    ],
+        "opacity": {
+          "condition": {"param": "state_highlight", "value": 0.6},
+          "value": 0.2
+        }
+      }
+    }, {
+      "data": {"values": [{}]},
+      "mark": {"type": "rule", "strokeDash": [2, 2], "size": 2},
+      "encoding": {"x": {"datum": {"year": 1999}}, "text": {"value": "Optimum"}}
+    },{
+      "data": {"values": [{}]},
+      "mark": {"type": "text", "fontSize" : 12, "fontWeight":"bold", "align" : "left"},
+      "encoding": {"x": {"datum": {"year": 2000}},"y": {"datum": 910},"text": {"value": "Approval of Australian Road Rules"}}
+    }
+  ]
+}
