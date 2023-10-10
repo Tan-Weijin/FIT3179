@@ -8,8 +8,14 @@
   display: block;
 }
 
+#choropleth_map{
+  width: 50%;
+
+}
+
 .child{
   height:200px;
   margin:auto;
   float: right;
+  width: 50%;
 }
