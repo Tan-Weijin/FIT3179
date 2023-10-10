@@ -14,23 +14,25 @@
         <div id="heatmap_graph"></div>
         <div id="age_distribution_graph"></div>
         <script type="text/javascript">
-            var vis_1 = "js/line.json";
+            var vis_1 = "Js/line.json";
             vegaEmbed('#line_graph', vis_1).then(function(result) {
                 // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
             }).catch(console.error);
-            var vis_2 = "js/chropleth_map.json";
+
+            var vis_2 = "Js/chropleth_map.json";
             vegaEmbed('#choropleth_map', vis_2).then(function(result) {
                 // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
             }).catch(console.error);
-            var vis_3 = "js/heatmap.json";
+
+            var vis_3 = "Js/heatmap.json";
             vegaEmbed('#heatmap_graph', vis_3).then(function(result) {
                 // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
             }).catch(console.error);
-            var vis_4 = "js/age_distribution.json";
+
+            var vis_4 = "Js/age_distribution.json";
             vegaEmbed('#age_distribution_graph', vis_4).then(function(result) {
                 // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
             }).catch(console.error);
-            
         </script>
     </body>
 </html>
