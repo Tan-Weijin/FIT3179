@@ -6,10 +6,10 @@
 
 #side {
   display: block;
-  float: right;
 }
 
 .child{
   height:200px;
-  margin:auto
+  margin:auto;
+  float: right;
 }
