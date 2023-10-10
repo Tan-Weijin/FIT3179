@@ -9,12 +9,17 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
     </head>
     <body>
+
         <title id = "title">Analysis on Car Crashes in Australia</title>
         <h1 id = "title">Analysis on Car Crashes in Australia</h1>
         <div id="line_graph"></div>
         <div id="choropleth_map"></div>
-        <div id="heatmap_graph"></div>
-        <div id="age_distribution_graph"></div>
+        <div id="side">
+            <div id="heatmap_graph"></div>
+            <div id="age_distribution_graph"></div>
+        </div>
+
+
         <script type="text/javascript">
             var vis_1 = "Js/line.json";
             vegaEmbed('#line_graph', vis_1).then(function(result) {

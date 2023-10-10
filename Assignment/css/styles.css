@@ -3,3 +3,12 @@
     height: auto !important; /* real browsers */
     min-height: 100%; /* real browsers */
   }
+
+#side {
+  padding:10px;
+}
+
+.child{
+  height:200px;
+  margin:auto
+}
