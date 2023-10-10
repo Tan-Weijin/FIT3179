@@ -9,14 +9,13 @@
 }
 
 #choropleth_map{
-  width:50%;
+  width:60%;
   height:100%;
 }
 
 .child{
-  height:200px;
   margin:auto;
   float: right;
-  width: 50%;
-  height:100%;
+  width: 40%;
+  height:50%;
 }
