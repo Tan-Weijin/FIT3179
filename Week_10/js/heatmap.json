@@ -3,7 +3,7 @@
     "data": {
         "url": "https://raw.githubusercontent.com/Tan-Weijin/FIT3179/main/Assignment/Data/Crash_Data.csv"
     },
-    "title": "IDK bro",
+    "title": "Frequency of Car Crashes Across the Week",
     "config": {
         "view": {
             "step": 20
