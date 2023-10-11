@@ -1,7 +1,11 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A population pyramid for the US in 2000.",
     "data": { "url": "https://raw.githubusercontent.com/Tan-Weijin/FIT3179/main/Assignment/Data/Crash_Data.csv"},
+    "title": {
+      "text": "Number of Crashes based on Gender",
+      "anchor": "middle",
+      "offset": 20
+    },
     "transform": [
       {"calculate": "datum.Gender == 2 ? 'Female' : 'Male'", "as": "gender"}
     ],
