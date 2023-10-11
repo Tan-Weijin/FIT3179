@@ -4,7 +4,7 @@
     "title": {
       "text": "Number of Crashes based on Gender",
       "anchor": "middle",
-      "offset": 20
+      "offset": 10
     },
     "transform": [
       {"calculate": "datum.Gender == 2 ? 'Female' : 'Male'", "as": "gender"}
