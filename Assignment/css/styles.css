@@ -8,9 +8,13 @@
   display: block;
 }
 
-#title{
+h1{
   font-family: "AS1744";
   text-align: "center";
+}
+
+p{
+  width: 50%;
 }
 
 .column_left {
