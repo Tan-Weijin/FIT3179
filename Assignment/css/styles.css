@@ -11,10 +11,13 @@
 h1{
   font-family: "AS1744";
   text-align: "center";
+  padding-left: 30%;
+
 }
 
 p{
   width: 50%;
+  padding-left: 10%;
 }
 
 .column_left {
