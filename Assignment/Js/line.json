@@ -3,7 +3,7 @@
   "layer":[
     {
       "title": "Car Crashes in Australia by State (1989 - 2021)",
-      "width": 700,
+      "width": 750,
       "height": 400,
       "data": {"url": "https://raw.githubusercontent.com/Tan-Weijin/FIT3179/main/Assignment/Data/crash_data_line.csv"},
       "params": [
@@ -36,8 +36,28 @@
       "encoding": {"x": {"datum": {"year": 1999}}, "text": {"value": "Optimum"}}
     },{
       "data": {"values": [{}]},
-      "mark": {"type": "text", "fontSize" : 12, "fontWeight":"bold", "align" : "left"},
-      "encoding": {"x": {"datum": {"year": 2000}},"y": {"datum": 910},"text": {"value": "Approval of Australian Road Rules"}}
+      "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left", "dx": -130, "dy": -180},
+      "encoding": {"text": {"value": "Approval of Australian"}}
+    },{
+      "data": {"values": [{}]},
+      "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left", "dx": -130, "dy": -170},
+      "encoding": {"text": {"value": "Road Rules"}}
+    },{
+      "data": {"values": [{}]},
+      "mark": {"type": "rule", "strokeDash": [2, 2], "size": 2},
+      "encoding": {"x": {"datum": {"year": 2016}}, "text": {"value": "Optimum"}}
+    },{
+      "data": {"values": [{}]},
+      "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left", "dx": 265, "dy": -180},
+      "encoding": {"text": {"value": "Increased Drug-Driving"}}
+    },{
+      "data": {"values": [{}]},
+      "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left", "dx": 265, "dy": -170},
+      "encoding": {"text": {"value": "Testing and Public "}}
+    },{
+      "data": {"values": [{}]},
+      "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left", "dx": 265, "dy": -160},
+      "encoding": {"text": {"value": "Awareness Campaigns"}}
     }
   ]
 }
