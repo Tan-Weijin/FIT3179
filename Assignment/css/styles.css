@@ -11,11 +11,13 @@
 .paragraph_left {
   font-size: 16px;
   text-align: left;
+  float: left;
 }
 
 .paragraph_right {
   font-size: 16px;
   text-align: right;
+  float: right;
 }
 
 .page {
