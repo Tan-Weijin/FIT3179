@@ -55,7 +55,7 @@
       "encoding": {"text": {"value": "Increased Drug-Driving"}}
     },{
       "data": {"values": [{}]},
-      "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left", "dx": 265, "dy": -168},
+      "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left", "dx": 265, "dy": -169},
       "encoding": {"text": {"value": "Testing and Public "}}
     },{
       "data": {"values": [{}]},
