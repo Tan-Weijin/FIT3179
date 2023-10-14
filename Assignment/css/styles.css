@@ -6,3 +6,10 @@
 p {
   font-size: 16px;
 }
+
+.page {
+  width: 1000px;
+  margin: auto;
+  padding: 70px;
+  padding-top: 30px;
+}

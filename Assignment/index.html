@@ -13,35 +13,37 @@
 
     </head>
     <body>
-        <div class="pure-g">
-            <div class="pure-u-1-3"></div>
-            <div class="pure-u-1-3">
-                <h1 id = "title">Analysis on Car Crashes in Australia</h1>
+        <div class = "page">
+            <div class="pure-g">
+                <div class="pure-u-1-3"></div>
+                <div class="pure-u-1-3">
+                    <h1 id = "title">Analysis on Car Crashes in Australia</h1>
+                </div>
+                <div class="pure-u-1-3"></div>
             </div>
-            <div class="pure-u-1-3"></div>
+            <div class="pure-g">
+                <div class="pure-u-2-24"></div>
+                <div class="pure-u-20-24">
+                    <p id = "paragraph">Car accidents remain a distressingly frequent phenomenon on Australia's roadways, presenting a substantial risk 
+                        to the safety and welfare of its residents. These events yield numerous injuries, fatalities, and property losses annually, 
+                        leaving a wake of destruction in their path. Utilizing an assortment of dynamic, interactive charts, maps, and graphs, 
+                        this visualization offers a compelling depiction of accident trends, highlighting the urgent need for proactive measures 
+                        to safeguard lives on Australian roads.</p>
+                </div>
+                <div class="pure-u-2-24"></div>
+            </div>
+            
+            <div id="side">
+                <div class = "column_left">
+                    <div id="choropleth_map"></div>
+                </div>
+                <div class = "column_right">
+                    <div id="heatmap_graph", class = "row"></div>
+                    <div id="age_distribution_graph", class = "row"></div>
+                </div>
+            </div>
+            <div id="line_graph"></div>
         </div>
-        <div class="pure-g">
-            <div class="pure-u-2-24"></div>
-            <div class="pure-u-20-24">
-                <p id = "paragraph">Car accidents remain a distressingly frequent phenomenon on Australia's roadways, presenting a substantial risk 
-                    to the safety and welfare of its residents. These events yield numerous injuries, fatalities, and property losses annually, 
-                    leaving a wake of destruction in their path. Utilizing an assortment of dynamic, interactive charts, maps, and graphs, 
-                    this visualization offers a compelling depiction of accident trends, highlighting the urgent need for proactive measures 
-                    to safeguard lives on Australian roads.</p>
-            </div>
-            <div class="pure-u-2-24"></div>
-        </div>
-        
-        <div id="side">
-            <div class = "column_left">
-                <div id="choropleth_map"></div>
-            </div>
-            <div class = "column_right">
-                <div id="heatmap_graph", class = "row"></div>
-                <div id="age_distribution_graph", class = "row"></div>
-            </div>
-        </div>
-        <div id="line_graph"></div>
 
         <script type="text/javascript">
             var vis_2 = "Js/chropleth_map.json";
