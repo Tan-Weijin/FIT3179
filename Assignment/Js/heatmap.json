@@ -3,7 +3,10 @@
     "data": {
         "url": "https://raw.githubusercontent.com/Tan-Weijin/FIT3179/main/Assignment/Data/Crash_Data.csv"
     },
-    "title": "Frequency of Car Crashes Across the Week",
+    "title":{
+        "text": "Frequency of Car Crashes Across the Week",
+        "offset": 20
+    } ,
     "config": {
         "view": {
             "step": 20
