@@ -5,7 +5,8 @@
     },
     "title":{
         "text": "Frequency of Car Crashes Across the Week",
-        "offset": 20
+        "offset": 20,
+        "fontSize": 20
     } ,
     "config": {
         "view": {
