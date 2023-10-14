@@ -48,11 +48,20 @@
       },{
          "data": {"values": [{}]},
          "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left" ,"dx": -50, "dy": -210, "color":"red"},
-         "encoding": {"text": {"value": "'In Northern Territory,"}}
+         "encoding": {"text": {"value": "In Northern Territory,"}}
        },{
          "data": {"values": [{}]},
          "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left" ,"dx": -50, "dy": -200, "color":"red"},
-         "encoding": {"text": {"value": "70% of roads are unpaved'"}}
+         "encoding": {"text": {"value": "70% of roads are unpaved"}}
+       }
+       ,{
+         "data": {"values": [{}]},
+         "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left" ,"dx": -50, "dy": 170, "color":"red"},
+         "encoding": {"text": {"value": "Speeding and distracted driving"}}
+       },{
+         "data": {"values": [{}]},
+         "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left" ,"dx": -50, "dy": 180, "color":"red"},
+         "encoding": {"text": {"value": "caused most deaths in Tasmania"}}
        }
    ],"config": {
       "view": {"stroke": null}
