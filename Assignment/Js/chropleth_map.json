@@ -35,7 +35,7 @@
                "scale": {
                   "type": "threshold",
                   "domain": [10, 20, 30, 40],
-                  "range": ["#c1e7ff","#94bed9","#6996b3","#3d708f","#004c6d"]
+                  "range": ["#fee5d9", "#fcae91", "#fb6a4a", "#de2d26", "#a50f15"]
                   }
                },
             "tooltip": [
@@ -47,20 +47,20 @@
          }
       },{
          "data": {"values": [{}]},
-         "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left" ,"dx": -50, "dy": -210, "color":"red"},
+         "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left" ,"dx": -50, "dy": -210},
          "encoding": {"text": {"value": "In Northern Territory,"}}
        },{
          "data": {"values": [{}]},
-         "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left" ,"dx": -50, "dy": -200, "color":"red"},
+         "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left" ,"dx": -50, "dy": -200},
          "encoding": {"text": {"value": "70% of roads are unpaved"}}
        }
        ,{
          "data": {"values": [{}]},
-         "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left" ,"dx": -50, "dy": 170, "color":"red"},
+         "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left" ,"dx": -50, "dy": 170},
          "encoding": {"text": {"value": "Speeding and distracted driving"}}
        },{
          "data": {"values": [{}]},
-         "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left" ,"dx": -50, "dy": 180, "color":"red"},
+         "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left" ,"dx": -50, "dy": 180},
          "encoding": {"text": {"value": "caused most deaths in Tasmania"}}
        }
    ],"config": {
