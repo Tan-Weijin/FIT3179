@@ -40,7 +40,7 @@
       "encoding": {"text": {"value": "Approval of Australian"}}
     },{
       "data": {"values": [{}]},
-      "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left", "dx": -130, "dy": -170},
+      "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left", "dx": -130, "dy": -175},
       "encoding": {"text": {"value": "Road Rules"}}
     },{
       "data": {"values": [{}]},
@@ -52,11 +52,11 @@
       "encoding": {"text": {"value": "Increased Drug-Driving"}}
     },{
       "data": {"values": [{}]},
-      "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left", "dx": 265, "dy": -170},
+      "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left", "dx": 265, "dy": -175},
       "encoding": {"text": {"value": "Testing and Public "}}
     },{
       "data": {"values": [{}]},
-      "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left", "dx": 265, "dy": -160},
+      "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left", "dx": 265, "dy": -165},
       "encoding": {"text": {"value": "Awareness Campaigns"}}
     }
   ]
