@@ -31,9 +31,9 @@
 
 .big_viz{
   width: 100%;
-  align-items: center;
+  padding-left: 18%;
 }
 
 .bottom_viz{
-  padding-top: 10%;
+  padding-top: 20%;
 }
