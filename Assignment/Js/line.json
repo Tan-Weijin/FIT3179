@@ -52,11 +52,11 @@
       "encoding": {"text": {"value": "Increased Drug-Driving"}}
     },{
       "data": {"values": [{}]},
-      "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left", "dx": 265, "dy": -165},
+      "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left", "dx": 265, "dy": -168},
       "encoding": {"text": {"value": "Testing and Public "}}
     },{
       "data": {"values": [{}]},
-      "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left", "dx": 265, "dy": -155},
+      "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left", "dx": 265, "dy": -158},
       "encoding": {"text": {"value": "Awareness Campaigns"}}
     }
   ]

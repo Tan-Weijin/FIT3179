@@ -3,9 +3,19 @@
   text-align: center;
 }
 
-p {
+.paragraph {
   font-size: 16px;
   text-align: center;
+}
+
+.paragraph_left {
+  font-size: 16px;
+  text-align: left;
+}
+
+.paragraph_right {
+  font-size: 16px;
+  text-align: right;
 }
 
 .page {
