@@ -62,5 +62,8 @@
       "mark": {"type": "text", "fontSize" : 10, "fontWeight":"bold", "align" : "left", "dx": 265, "dy": -158},
       "encoding": {"text": {"value": "Awareness Campaigns"}}
     }
-  ]
+  ],
+  "config": {
+    "background": "#F8F6F4"
+  }
 }

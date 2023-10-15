@@ -81,7 +81,8 @@
     }],
     "config": {
       "view": {"stroke": null},
-      "axis": {"grid": false}
+      "axis": {"grid": false},
+      "background": "#E3F4F4"
     }
   }
   

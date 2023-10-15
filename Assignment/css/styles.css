@@ -16,7 +16,7 @@
   float: left;
   width: 90%;
   font-family: sans-serif;
-
+  padding-left: 5%;
 }
 
 .paragraph_right {
@@ -25,7 +25,7 @@
   float: right;
   width: 90%;
   font-family: sans-serif;
-
+  padding-right: 5%;
 }
 
 .page {

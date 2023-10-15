@@ -64,6 +64,7 @@
          "encoding": {"text": {"value": "caused most deaths in Tasmania"}}
        }
    ],"config": {
-      "view": {"stroke": null}
+      "view": {"stroke": null},
+      "background": "#C4DFDF"
    }
 }
